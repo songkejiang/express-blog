@@ -12,7 +12,7 @@ con.connect()
 //   console.log(result)
 // })
 function exec (sql) {
-  console.log('-------------',sql)
+  // console.log('-------------',sql)
   return new Promise((resolve, reject) => {
     con.query(sql, (err, result) => {
       if (err) {

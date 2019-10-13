@@ -6,7 +6,9 @@ router.get('/list', (req, res, next) => {
     const author = req.query.author || ''
     const keyWords = req.query.keyWords || ''
     return getList(author, keyWords).then(listData =>{
-      return new SuccessModel(listData)
+      // console.log(JSON.stringify(new SuccessModel(listData)))
+      // return new SuccessModel(listData)
+      res.json(new SuccessModel(listData))
     })
 })
 

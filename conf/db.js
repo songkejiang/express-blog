@@ -5,7 +5,7 @@ let mysql_conf
 
 if(env==='dev') {
   mysql_conf = {
-    host: '127.0.0.1',
+    host: '149.129.107.253',
     user: 'root',
     password: 'Jks123456', 
     port: '3306',
